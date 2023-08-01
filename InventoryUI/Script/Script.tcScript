@@ -39,11 +39,11 @@
 			<child name="ExceptionHandling" key="{A746EF60-98B7-4170-B262-801DD9207D1B}" path="ExceptionHandling.js" />
 		</folder>
 		<folder name="Utilities">
-			<child name="SendReportByEmail" key="{C8A9C337-6515-4846-85CD-7F79CE2F0F9F}" path="..\..\..\..\..\Downloads\SendReportByEmail.js" />
-			<child name="WaitMethods" key="{483DD025-ACC0-49DF-9A57-398F462EF0D2}" path="..\..\..\..\..\Downloads\WaitMethods.js" />
+			<child name="SendReportByEmail" key="{F5F4CEEC-71D4-4444-BF64-ACE1C82ADFBC}" path="SendReportByEmail.js" />
+			<child name="WaitMethods" key="{ED4E985B-91C5-44B2-B000-EA1CA4BC4059}" path="WaitMethods.js" />
 		</folder>
 		<folder name="Events">
-			<child name="TestEvent" key="{C8CF98F4-B911-46DF-BD65-008FB58BE86C}" path="..\..\..\..\..\Downloads\TestEvent.js" />
+			<child name="TestEvent" key="{54085208-26EA-457F-BC12-23B76589B80E}" path="TestEvent.js" />
 		</folder>
 	</children>
 </Root>
