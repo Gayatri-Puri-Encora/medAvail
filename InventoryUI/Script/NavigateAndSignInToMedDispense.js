@@ -6,7 +6,7 @@ function navigateToMedDispense()
 {
   try{
   //Navigate To meddispense page
-  Browsers.Item(btChrome).Navigate("https://qa1.medplatform.medavail.com/MedDispense?provider=MedAvailFederation");
+  Browsers.Item(btChrome).Navigate("https://qa4.medplatform.medavail.com/MedDispense?provider=MedAvailFederation");
   //Wait to open login window
   browser.LoginWindow.WaitProperty("WndCaption", "Sign In - Google Chrome");
   browser.LoginWindow.Maximize();

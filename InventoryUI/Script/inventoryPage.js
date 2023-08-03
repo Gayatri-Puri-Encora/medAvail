@@ -103,8 +103,7 @@ function VerifyProductName()
 //Verify all searched package description
 function VerifyPackageDesription()
 {
-  drugTableCount = inventoryPage.DrugTable.childElementCount;
-   Log.Message(drugTableCount);
+  verifyDrugTableCount();
    if(drugTableCount==0){
        Log.Message("No RX in Inventory");
    }else{
@@ -118,14 +117,13 @@ function VerifyPackageDesription()
 //Verify all searched product code
 function VerifyProductCode()
 {
-  drugTableCount = inventoryPage.DrugTable.childElementCount;
-   Log.Message(drugTableCount);
+  verifyDrugTableCount();
    if(drugTableCount==0){
        Log.Message("No RX in Inventory");
    }else{
       for(let i=1;i<=drugTableCount;i++){
      let product_name_xpath = "//div[@class='WzVcYlXql-4ydhSVtF-qU']/ul["+i+"]/li[3]";    
-     aqObject.CheckProperty(inventoryPage.FindElement(product_name_xpath), "contentText", cmpContains , Project.Variables.productCode);     
+     aqObject.CheckProperty(inventoryPage.FindElement(product_name_xpath), "contentText", cmpContains , Project.Variables.productCode2);     
      }
    }
 }
@@ -133,8 +131,7 @@ function VerifyProductCode()
 //Verify all searched quantity In Package
 function VerifyquantityInPackage()
 {
-  drugTableCount = inventoryPage.DrugTable.childElementCount;
-   Log.Message(drugTableCount);
+  verifyDrugTableCount();
    if(drugTableCount==0){
        Log.Message("No RX in Inventory");
    }else{
@@ -148,8 +145,7 @@ function VerifyquantityInPackage()
 //Verify all searched manufacturer
 function VerifyManufacturer()
 {
-  drugTableCount = inventoryPage.DrugTable.childElementCount;
-   Log.Message(drugTableCount);
+  verifyDrugTableCount();
    if(drugTableCount==0){
        Log.Message("No RX in Inventory");
    }else{
@@ -163,8 +159,8 @@ function VerifyManufacturer()
 //Verify all searched package code
 function VerifyPackageCode()
 {
-  drugTableCount = inventoryPage.DrugTable.childElementCount;
-   Log.Message(drugTableCount);
+  
+  verifyDrugTableCount();
    if(drugTableCount==0){
        Log.Message("No RX in Inventory");
    }else{
@@ -178,14 +174,13 @@ function VerifyPackageCode()
 //Verify all searched soonest expiration
 function VerifySoonestExpiration()
 {
-  drugTableCount = inventoryPage.DrugTable.childElementCount;
-   Log.Message(drugTableCount);
+  verifyDrugTableCount();
    if(drugTableCount==0){
        Log.Message("No RX in Inventory");
    }else{
       for(let i=1;i<=drugTableCount;i++){
      let product_name_xpath = "//div[@class='WzVcYlXql-4ydhSVtF-qU']/ul["+i+"]/li[7]";    
-     aqObject.CheckProperty(inventoryPage.FindElement(product_name_xpath), "contentText", cmpContains , Project.Variables.packageCode);     
+     aqObject.CheckProperty(inventoryPage.FindElement(product_name_xpath), "contentText", cmpContains , Project.Variables.soonestExpiration);     
      }
    }
 }
@@ -193,8 +188,7 @@ function VerifySoonestExpiration()
 //Verify all searched available packages
 function VerifyAvailablePackages()
 {
-  drugTableCount = inventoryPage.DrugTable.childElementCount;
-   Log.Message(drugTableCount);
+  verifyDrugTableCount();
    if(drugTableCount==0){
        Log.Message("No RX in Inventory");
    }else{
@@ -208,8 +202,7 @@ function VerifyAvailablePackages()
 //Verify all searched is demo packages
 function VerifyIsDemoPackage()
 {
-  drugTableCount = inventoryPage.DrugTable.childElementCount;
-   Log.Message(drugTableCount);
+  verifyDrugTableCount();
    if(drugTableCount==0){
        Log.Message("No RX in Inventory");
    }else{
@@ -235,26 +228,28 @@ function searchProductNameFromFilterbox()
 
 function searchPackageDescriptionFromFilterbox()
 {
-  inventoryPage.productName.productNameFilterbox.SetText(Project.Variables.packageDescription);
-  aqObject.CheckProperty(inventoryPage.productName.productNameFilterbox , "Text" , cmpEqual , Project.Variables.packageDescription)
+  inventoryPage.packageDescription.packageDescriptionFilterbox.SetText(Project.Variables.packageDescription);
+  aqObject.CheckProperty(inventoryPage.packageDescription.packageDescriptionFilterbox , "Text" , cmpEqual , Project.Variables.packageDescription)
 }
 
 function searchProductCodeFromFilterbox()
 {
-  inventoryPage.productName.productNameFilterbox.SetText(Project.Variables.productCode);
-  aqObject.CheckProperty(inventoryPage.productName.productNameFilterbox , "Text" , cmpEqual , Project.Variables.productCode)
+  tmpPackageCode = Project.Variables.productCode2;
+  tmpPackageCode = tmpPackageCode.replaceAll('-','');
+  inventoryPage.productCode.productCodeFilterbox.SetText(tmpPackageCode);
+  aqObject.CheckProperty(inventoryPage.productCode.productCodeFilterbox , "Text" , cmpEqual , Project.Variables.productCode2)
 }
 
 function searchManufacturerFromFilterbox()
 {
-  inventoryPage.productName.productNameFilterbox.SetText(Project.Variables.manufacturer);
-  aqObject.CheckProperty(inventoryPage.productName.productNameFilterbox , "Text" , cmpEqual , Project.Variables.manufacturer)
+  inventoryPage.manufacturer.manufacturerFilterbox.SetText(Project.Variables.manufacturer);
+  aqObject.CheckProperty(inventoryPage.manufacturer.manufacturerFilterbox , "Text" , cmpEqual , Project.Variables.manufacturer)
 }
 
 function searchPackageCodeFromFilterbox()
 {
-  inventoryPage.productName.productNameFilterbox.SetText(Project.Variables.packageCode);
-  aqObject.CheckProperty(inventoryPage.productName.productNameFilterbox , "Text" , cmpEqual , Project.Variables.packageCode)
+  inventoryPage.packageCode.packageCodeFilterbox.SetText(Project.Variables.packageCode);
+  aqObject.CheckProperty(inventoryPage.packageCode.packageCodeFilterbox , "Text" , cmpEqual , Project.Variables.packageCode)
 }
 
 function clearProductNameFromFilterbox()
@@ -266,26 +261,26 @@ function clearProductNameFromFilterbox()
 
 function clearPackageDescriptionFromFilterbox()
 {
-  inventoryPage.productName.productNameFilterbox.SetText("");
-  aqObject.CheckProperty(inventoryPage.productName.productNameFilterbox , "Text" , cmpEqual , "")
+  inventoryPage.packageDescription.packageDescriptionFilterbox.SetText("");
+  aqObject.CheckProperty(inventoryPage.packageDescription.packageDescriptionFilterbox , "Text" , cmpEqual , "")
 }
 
 function clearProductCodeFromFilterbox()
 {
-  inventoryPage.productName.productNameFilterbox.SetText("");
-  aqObject.CheckProperty(inventoryPage.productName.productNameFilterbox , "Text" , cmpEqual , "")
+  inventoryPage.productCode.productCodeFilterbox.SetText("");
+  aqObject.CheckProperty(inventoryPage.productCode.productCodeFilterbox , "Text" , cmpEqual , "")
 }
 
 function clearManufacturerFromFilterbox()
 {
-  inventoryPage.productName.productNameFilterbox.SetText("");
-  aqObject.CheckProperty(inventoryPage.productName.productNameFilterbox , "Text" , cmpEqual , "")
+  inventoryPage.manufacturer.manufacturerFilterbox.SetText("");
+  aqObject.CheckProperty(inventoryPage.manufacturer.manufacturerFilterbox , "Text" , cmpEqual , "")
 }
 
 function clearPackageCodeFromFilterbox()
 {
-  inventoryPage.productName.productNameFilterbox.SetText(Project.Variables.packageCode);
-  aqObject.CheckProperty(inventoryPage.productName.productNameFilterbox , "Text" , cmpEqual , "")
+  inventoryPage.packageCode.packageCodeFilterbox.SetText("");
+  aqObject.CheckProperty(inventoryPage.packageCode.packageCodeFilterbox , "Text" , cmpEqual , "")
 }
 
 function maxAndMinInventoryPage()
@@ -321,10 +316,11 @@ module.exports.searchPackageDescriptionFromFilterbox = searchPackageDescriptionF
 module.exports.searchProductCodeFromFilterbox = searchProductCodeFromFilterbox;
 module.exports.searchManufacturerFromFilterbox = searchManufacturerFromFilterbox;
 module.exports.searchPackageCodeFromFilterbox = searchPackageCodeFromFilterbox;
-module.exports.
-module.exports.
-module.exports.
-module.exports.
-module.exports.
+module.exports.clearProductNameFromFilterbox = clearProductNameFromFilterbox;
+module.exports.clearPackageDescriptionFromFilterbox = clearPackageDescriptionFromFilterbox;
+module.exports.clearProductCodeFromFilterbox = clearProductCodeFromFilterbox;
+module.exports.clearManufacturerFromFilterbox = clearManufacturerFromFilterbox;
+module.exports.clearPackageCodeFromFilterbox = clearPackageCodeFromFilterbox;
+
 
 

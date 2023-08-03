@@ -101,12 +101,27 @@
 					<DefValue StrValue="Merck Sharp &amp; Dohme Corp" />
 				</Variable>
 				<Variable Name="soonestExpiration" Type="String" Local="False">
-					<DefValue />
+					<DefValue StrValue="2023-Apr-01" />
 				</Variable>
 				<Variable Name="availablePackages" Type="String" Local="False">
-					<DefValue />
+					<DefValue StrValue="155" />
 				</Variable>
 				<Variable Name="isDemoPackage" Type="String" Local="False">
+					<DefValue StrValue="No" />
+				</Variable>
+				<Variable Name="productCode2" Type="String" Local="False">
+					<DefValue StrValue="00006-0112-31" />
+				</Variable>
+				<Variable Name="patientID" Type="String" Local="False">
+					<DefValue />
+				</Variable>
+				<Variable Name="patientBaseUrl" Type="String" Local="False">
+					<DefValue StrValue="https://app-epic-mock-svc-dev-thr.azurewebsites.net/api/patient/" />
+				</Variable>
+				<Variable Name="rxBaseUrl" Type="String" Local="False">
+					<DefValue StrValue="https://app-epic-mock-svc-dev-thr.azurewebsites.net/api/rx/" />
+				</Variable>
+				<Variable Name="rxId" Type="String" Local="False">
 					<DefValue />
 				</Variable>
 			</Items>

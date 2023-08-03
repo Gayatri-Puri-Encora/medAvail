@@ -8,6 +8,7 @@
 			<folder name="Inventory">
 				<child name="Inventory" key="{51A2FB64-199B-4138-906A-120A7CC021CF}" path="Inventory.js" />
 			</folder>
+			<child name="ViewAndManipulateImage" key="{26C190B6-D5A6-4CA2-8CC6-6414203CE227}" path="ViewAndManipulateImage.js" />
 		</folder>
 		<folder name="MedDispense">
 			<folder name="SearchAndIdentifyCustomer">

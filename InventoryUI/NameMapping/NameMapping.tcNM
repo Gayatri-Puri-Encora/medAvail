@@ -505,7 +505,7 @@
 										<Value Value="Page" />
 									</Property>
 									<Property Name="URL">
-										<Value Value="https://qa1-adfs.medplatform.medavail.com/adfs/ls/?wtrealm=https%3A%2F%2Fqa1.medplatform.medavail.com%2FMedDispense*" />
+										<Value Value="https://qa4-adfs.medplatform.medavail.com/adfs/ls/?wtrealm*" />
 									</Property>
 								</Properties>
 								<Children>
@@ -786,7 +786,7 @@
 										<Value Value="Page" />
 									</Property>
 									<Property Name="URL">
-										<Value Value="https://qa1.medplatform.medavail.com/MedDispense/*aa" />
+										<Value Value="https://qa1.medplatform.medavail.com/MedDispense/*" />
 									</Property>
 								</Properties>
 								<Children>
@@ -1304,6 +1304,171 @@
 												</Selectors>
 											</Child>
 										</Children>
+									</Child>
+									<Child Name="editImagesHeader" Key="{A5C124A7-F979-4BBE-878E-015AA7DE2DBD}">
+										<Image FileName="-1201629020" Left="696" Top="237" Right="781" Bottom="257" />
+										<TypeInfo Item0="{1D5BA2FC-454E-4561-8C4B-5BAC5E4E2544}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//h2[.=&apos;Edit Images&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//h2" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="orderCollateralHeader" Key="{F12E98A2-FAC3-4F05-9A83-EA90A8634B62}">
+										<Image FileName="495925334" Left="693" Top="272" Right="1253" Bottom="292" />
+										<TypeInfo Item0="{1D5BA2FC-454E-4561-8C4B-5BAC5E4E2544}" />
+										<Selectors>
+											<Selector>
+												<Value Value="xpath=//div[.=&apos;Order Collateral&apos;]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="editImagesMagnifyButton" Key="{2DCA3966-3C58-4974-A332-A7DB6C36079A}">
+										<Image FileName="-1387701673" Left="773" Top="298" Right="855" Bottom="358" />
+										<TypeInfo Item0="{1D5BA2FC-454E-4561-8C4B-5BAC5E4E2544}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[.=&apos;Magnify&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//li[2]/div" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="editImagesHueSaturationButton" Key="{BB67A379-3D9A-41F4-BB1C-603FEDCE1F9A}">
+										<Image FileName="-1591611867" Left="1173" Top="298" Right="1255" Bottom="358" />
+										<TypeInfo Item0="{1D5BA2FC-454E-4561-8C4B-5BAC5E4E2544}" />
+										<Selectors>
+											<Selector>
+												<Value Value="xpath=//div[.=&apos;Hue / Saturation&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="xpath=//li[7]/div" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="editImagesRotateRightButton" Key="{6124A46F-90D3-4E09-BFEC-63FD1BFE934B}">
+										<Image FileName="433912700" Left="1014" Top="328" Right="1094" Bottom="358" />
+										<TypeInfo Item0="{1D5BA2FC-454E-4561-8C4B-5BAC5E4E2544}" />
+										<Selectors>
+											<Selector>
+												<Value Value="xpath=//div[text()=&apos;Rotate Right&apos;]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="editImagesBrightnessContrastButton" Key="{66BADCA5-E3C8-42C6-9F69-BA707229A521}">
+										<Image FileName="425399275" Left="1094" Top="328" Right="1174" Bottom="358" />
+										<TypeInfo Item0="{1D5BA2FC-454E-4561-8C4B-5BAC5E4E2544}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[text()=&apos;Brightness / Contrast&apos;]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="editImagesRotateLeftButton" Key="{3BCFBD6A-AFFB-40DE-9E12-C3FD86365D89}">
+										<Image FileName="-2011298820" Left="934" Top="328" Right="1014" Bottom="358" />
+										<TypeInfo Item0="{1D5BA2FC-454E-4561-8C4B-5BAC5E4E2544}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[text()=&apos;Rotate Left&apos;]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="editImagesCropButton" Key="{2131ECCB-EA1B-46BA-AE73-97E642691224}">
+										<Image FileName="1019557161" Left="854" Top="328" Right="934" Bottom="358" />
+										<TypeInfo Item0="{1D5BA2FC-454E-4561-8C4B-5BAC5E4E2544}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[text()=&apos;Crop&apos;]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="editImagesZoomButton" Key="{A8873670-811C-4C59-B644-B9A37A94A969}">
+										<Image FileName="-1011712441" Left="694" Top="328" Right="774" Bottom="358" />
+										<TypeInfo Item0="{1D5BA2FC-454E-4561-8C4B-5BAC5E4E2544}" />
+										<Selectors>
+											<Selector>
+												<Value Value="xpath=//div[text()=&apos;Zoom&apos;]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="imageGetencapsulateddatathumbnai" Key="{ECA9C9D0-CF79-410F-BE90-627C4E959468}">
+										<Image FileName="1841921850" Left="13" Top="261" Right="93" Bottom="361" />
+										<TypeInfo Item0="{2E9A07D6-C5D1-4E6F-BAD1-A788F19DD63C}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div//img[contains(@src, &apos;GetEncapsulatedDataThumbnail&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//img[contains(@class, &apos;_9-aRDhBhM9Ns90urU29O5&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[2]/div/div/img" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelHelp" Key="{47A6C389-E4CF-4E33-8D55-B7F1A88B4DCD}">
+										<Image FileName="-652781775" Left="1163" Top="225" Right="1245" Bottom="251" />
+										<TypeInfo Item0="{2E9A07D6-C5D1-4E6F-BAD1-A788F19DD63C}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[2]//div[contains(@class, &apos;p-0&apos;)]/div[contains(@class, &apos;p-0&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="editImagesScannedDocument" Key="{16D2D14C-5951-4E5D-B7EC-8885473F6C3B}">
+										<Image FileName="-115385004" Left="855" Top="418" Right="1094" Bottom="768" />
+										<TypeInfo Item0="{1D5BA2FC-454E-4561-8C4B-5BAC5E4E2544}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//canvas[contains(@class, &apos;mh-100&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[3]//canvas" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="editImagesDownlodButton" Key="{B4212FCF-4449-46DB-BF03-C18A40AE766B}">
+										<Image FileName="324298919" Left="875" Top="789" Right="984" Bottom="819" />
+										<TypeInfo Item0="{46D7627D-8F5C-40B6-B785-3DF6852F15AE}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//button[.=&apos;Download&apos;]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="editImagesPrintButton" Key="{359437A3-B3B9-43BF-9611-EF9E702A40EC}">
+										<Image FileName="17254884" Left="996" Top="789" Right="1073" Bottom="819" />
+										<TypeInfo Item0="{46D7627D-8F5C-40B6-B785-3DF6852F15AE}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//button[.=&apos;Print&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//button[contains(@class, &apos;ml-3&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="editImagesZoomPlusButton" Key="{73F7C079-D9A3-4CA1-A1CA-CB24FC98F37E}">
+										<Image FileName="-984755512" Left="946" Top="363" Right="973" Bottom="397" />
+										<TypeInfo Item0="{1D5BA2FC-454E-4561-8C4B-5BAC5E4E2544}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[3]//div/div/div[2]/div/div" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="editImagesZoomMinusButton" Key="{0FBB5C7E-BE2A-4928-A3C9-4C82A4B5686D}">
+										<Image FileName="-1848545238" Left="975" Top="363" Right="1002" Bottom="397" />
+										<TypeInfo Item0="{1D5BA2FC-454E-4561-8C4B-5BAC5E4E2544}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[3]//div[2]//div[2]" />
+											</Selector>
+										</Selectors>
 									</Child>
 								</Children>
 							</Child>
@@ -2356,6 +2521,22 @@
 					<Child Name="patientName" Owner="{78DD2C15-9AF8-4C2F-8B70-1DC1AFDC1300}" />
 					<Child Name="patientNotes" Owner="{56BE5C91-561C-4EFC-A39E-B2A0786F043B}" />
 				</Child>
+				<Child Name="editImagesHeader" Owner="{A5C124A7-F979-4BBE-878E-015AA7DE2DBD}" />
+				<Child Name="orderCollateralHeader" Owner="{F12E98A2-FAC3-4F05-9A83-EA90A8634B62}" />
+				<Child Name="editImagesMagnifyButton" Owner="{2DCA3966-3C58-4974-A332-A7DB6C36079A}" />
+				<Child Name="editImagesRotateRightButton" Owner="{6124A46F-90D3-4E09-BFEC-63FD1BFE934B}" />
+				<Child Name="editImagesHueSaturationButton" Owner="{BB67A379-3D9A-41F4-BB1C-603FEDCE1F9A}" />
+				<Child Name="editImagesBrightnessContrastButton" Owner="{66BADCA5-E3C8-42C6-9F69-BA707229A521}" />
+				<Child Name="editImagesRotateLeftButton" Owner="{3BCFBD6A-AFFB-40DE-9E12-C3FD86365D89}" />
+				<Child Name="editImagesCropButton" Owner="{2131ECCB-EA1B-46BA-AE73-97E642691224}" />
+				<Child Name="editImagesZoomButton" Owner="{A8873670-811C-4C59-B644-B9A37A94A969}" />
+				<Child Name="imageGetencapsulateddatathumbnai" Owner="{ECA9C9D0-CF79-410F-BE90-627C4E959468}" />
+				<Child Name="panelHelp" Owner="{47A6C389-E4CF-4E33-8D55-B7F1A88B4DCD}" />
+				<Child Name="editImagesScannedDocument" Owner="{16D2D14C-5951-4E5D-B7EC-8885473F6C3B}" />
+				<Child Name="editImagesDownlodButton" Owner="{B4212FCF-4449-46DB-BF03-C18A40AE766B}" />
+				<Child Name="editImagesPrintButton" Owner="{359437A3-B3B9-43BF-9611-EF9E702A40EC}" />
+				<Child Name="editImagesZoomMinusButton" Owner="{0FBB5C7E-BE2A-4928-A3C9-4C82A4B5686D}" />
+				<Child Name="editImagesZoomPlusButton" Owner="{73F7C079-D9A3-4CA1-A1CA-CB24FC98F37E}" />
 			</Child>
 			<Child Name="loginWindow" Owner="{C42EB11A-0F0D-4521-B0BA-CF32F7ACC707}" />
 			<Child Name="SpnRxPage" Owner="{235F109F-C889-4621-A8DC-D359685F6B25}">
