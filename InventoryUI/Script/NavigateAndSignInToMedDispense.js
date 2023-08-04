@@ -1,4 +1,5 @@
-﻿let browser = Aliases.browser;
+﻿var WaitMethods = require("WaitMethods");
+let browser = Aliases.browser;
 let signInPage= browser.meddispenseSignInPage;
 let loginPage = signInPage.medDispenseLoginForm;
 
@@ -6,7 +7,7 @@ function navigateToMedDispense()
 {
   try{
   //Navigate To meddispense page
-  Browsers.Item(btChrome).Navigate("https://qa4.medplatform.medavail.com/MedDispense?provider=MedAvailFederation");
+  Browsers.Item(btChrome).Navigate("https://"+ Project.Variables.envQA1 +".medplatform.medavail.com/MedDispense?provider=MedAvailFederation");
   //Wait to open login window
   browser.LoginWindow.WaitProperty("WndCaption", "Sign In - Google Chrome");
   browser.LoginWindow.Maximize();
@@ -33,6 +34,7 @@ function signIn(){
   //Click on Submit button
   loginPage.SignInButton.Click();
   Log.Message("Clicked On sign In button.");
+  WaitMethods.waitForElement(browser.medDispensePage.pinVerificationHeader, 10000)
                                                                                                                                         //Wait until receives Pin verification popup
   //Verify pin verification popup appears                                                                                                                                        
   aqObject.CheckProperty(browser.medDispensePage.pinVerificationHeader , "contentText", cmpEqual, "PIN Verification");
@@ -51,6 +53,28 @@ function submitPin()
   aqObject.CheckProperty(browser.medDispensePage.contactCenterAgentHeader , "contentText", cmpEqual, "Contact Center Agent");
   Log.Message("User logged in successfully");
 }
+
+function verifySignInPageUI()
+{
+  aqObject.CheckProperty(signInPage.medDispenseLoginForm.usernameTextField, "Exists", cmpEqual, true);
+  aqObject.CheckProperty(signInPage.medDispenseLoginForm.passwordTextField, "Exists", cmpEqual, true);
+  aqObject.CheckProperty(signInPage.medDispenseLoginForm.SignInButton, "Exists", cmpEqual, true);
+  aqObject.CheckProperty(signInPage.medDispenseLogo, "Exists", cmpEqual, true);
+}
+
+function verifyPinVerificationPopupUI()
+{
+  //Verify Pin textbox is displayed
+  aqObject.CheckProperty(browser.medDispensePage.pinVerificationForm.pinBox, "Exists", cmpEqual, true)
+  aqObject.CheckProperty(browser.medDispensePage.panelIfYouForgotYourPin, "contentText", cmpEqual, "If you forgot your PIN,\nClick here\nto reset it." )
+  
+  //Verify Submit button is disabled and greyed out
+  aqObject.CheckProperty(browser.medDispensePage.pinVerificationSubmitButtonGrey,  "className", cmpEqual, "greyButton")
+  Log.Message("Submit button is disabled and displayed as greyed out")
+}
+
 module.exports.navigateToMedDispense = navigateToMedDispense;
 module.exports.signIn = signIn;
 module.exports.submitPin = submitPin;
+module.exports.verifySignInPageUI = verifySignInPageUI
+module.exports.verifyPinVerificationPopupUI = verifyPinVerificationPopupUI

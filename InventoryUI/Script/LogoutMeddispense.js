@@ -3,7 +3,7 @@ let meddispensePage= browser.medDispensePage;
 function logout()
 {
   //click on username dropdown
-  browser.commonControls.panelGayatriMedplatformBox.Click();
+  meddispensePage.panelUserName.Click();
   //Click on Sign out menu
   meddispensePage.UsernameDropDownBox.SignOutMenu.Click();
   //Verify sign out message

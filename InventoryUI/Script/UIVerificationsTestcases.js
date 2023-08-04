@@ -61,3 +61,22 @@ function testVerifyQAConsultAuthorizeTaskUi_TC96667()
   QaConsultAuthorizeTask.VerifyUiOfAuthorizePopup();
   QaConsultAuthorizeTask.cancelAuthorization();
 }
+
+function testVerifyMedDispenseSignInAndSignOutPageUi_TC96654()
+{
+  Log.Message("Testcase execution started for Test Case 96654:Verify MedDispense UI for Login and Log out functionality")
+  
+  //Navigate To meddispense
+  NavigateAndSignInToMedDispense.navigateToMedDispense();
+  
+  //Verify UI of SignIn Page
+  NavigateAndSignInToMedDispense.verifySignInPageUI();
+  
+  //SignIn to medDispense
+  NavigateAndSignInToMedDispense.signIn();
+  NavigateAndSignInToMedDispense.verifyPinVerificationPopupUI();
+  NavigateAndSignInToMedDispense.submitPin();
+  
+   //Logout from medDispense
+  LogoutMeddispense.logout()
+}
