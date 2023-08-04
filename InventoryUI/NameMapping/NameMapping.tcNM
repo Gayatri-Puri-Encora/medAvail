@@ -27,7 +27,7 @@
 										<Value Value="Page" />
 									</Property>
 									<Property Name="URL">
-										<Value Value="https://qa1.medplatform.medavail.com/MedDispense/identifyCustomer" />
+										<Value Value="https://*.medplatform.medavail.com/MedDispense/identifyCustomer" />
 									</Property>
 								</Properties>
 								<Children>
@@ -170,7 +170,7 @@
 										<Value Value="Page" />
 									</Property>
 									<Property Name="URL">
-										<Value Value="https://qa1.medplatform.medavail.com/MedDispense/inventoryView*" />
+										<Value Value="https://*.medplatform.medavail.com/MedDispense/inventoryView*" />
 									</Property>
 								</Properties>
 								<Children>
@@ -505,7 +505,7 @@
 										<Value Value="Page" />
 									</Property>
 									<Property Name="URL">
-										<Value Value="https://qa4-adfs.medplatform.medavail.com/adfs/ls/?wtrealm*" />
+										<Value Value="https://*-adfs.medplatform.medavail.com/adfs/ls/?wtrealm*" />
 									</Property>
 								</Properties>
 								<Children>
@@ -621,7 +621,7 @@
 										<Value Value="Page" />
 									</Property>
 									<Property Name="URL">
-										<Value Value="https://qa1.medplatform.medavail.com/MedDispense?provider=MedAvailFederation?provider=MedAvailFederation" />
+										<Value Value="https://*.medplatform.medavail.com/MedDispense?provider=MedAvailFederation?provider=MedAvailFederation" />
 									</Property>
 								</Properties>
 								<Children>
@@ -753,6 +753,78 @@
 											</Selector>
 										</Selectors>
 									</Child>
+									<Child Name="panelIfYouForgotYourPin" Key="{F8C37E9B-1487-4405-925E-3FD9E1012837}">
+										<Image FileName="1139650162" Left="806" Top="619" Right="1139" Bottom="637" />
+										<TypeInfo Item0="{1D5BA2FC-454E-4561-8C4B-5BAC5E4E2544}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[text()=&apos;If you forgot your PIN,&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;marginTop35&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="pinVerificationSubmitButtonGrey" Key="{CF092BEA-8E11-4D2E-8D9C-09D83B52667C}">
+										<Image FileName="-1482967251" Left="1045" Top="665" Right="1131" Bottom="694" />
+										<TypeInfo Item0="{70F42483-8559-4886-9097-C70F71A95D89}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//input[@value=&apos;Submit&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//input[@type=&apos;submit&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//input[contains(@class, &apos;greyButton&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[3]/input" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="submitbuttonSubmit2" Key="{0309B7A0-B5B8-41D3-8D98-5AA9B9A6EEFB}">
+										<Image FileName="-214868664" Left="1045" Top="665" Right="1131" Bottom="694" />
+										<TypeInfo Item0="{70F42483-8559-4886-9097-C70F71A95D89}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//input[@value=&apos;Submit&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//input[@type=&apos;submit&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[3]/input" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="passwordbox" Key="{F9BC8F57-4BD1-4E23-865E-38BBC530910B}">
+										<Image FileName="-386671842" Left="798" Top="551" Right="1131" Bottom="579" />
+										<TypeInfo Item0="{68377858-BEC0-4CE9-8270-7F2CFCBD530F}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//input[@type=&apos;password&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//input[contains(@class, &apos;form-control&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[2]//form//input" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelUserName" Key="{08FFB89F-34AF-4B2D-8C4D-A4E4666E9DE0}">
+										<Image FileName="1365062654" Left="1552" Top="128" Right="1720" Bottom="146" />
+										<TypeInfo Item0="{1D5BA2FC-454E-4561-8C4B-5BAC5E4E2544}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[text()=&apos;truptijadhav@medplatform.box&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div//div[contains(@class, &apos;pr-2&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
 								</Children>
 							</Child>
 							<Child Name="meddispenseSignOutPage" Key="{2467B272-35B0-49CB-AF14-4F30EF069C9A}">
@@ -763,7 +835,7 @@
 										<Value Value="Page" />
 									</Property>
 									<Property Name="URL">
-										<Value Value="https://&quot;&apos;+Project.Variables.env+&apos;&quot;.medplatform.medavail.com/MedDispense/api/Home/SignOut" />
+										<Value Value="https://*.medplatform.medavail.com/MedDispense/api/Home/SignOut" />
 									</Property>
 								</Properties>
 								<Children>
@@ -786,7 +858,7 @@
 										<Value Value="Page" />
 									</Property>
 									<Property Name="URL">
-										<Value Value="https://qa1.medplatform.medavail.com/MedDispense/*" />
+										<Value Value="https://*.medplatform.medavail.com/MedDispense/*" />
 									</Property>
 								</Properties>
 								<Children>
@@ -996,7 +1068,7 @@
 										<TypeInfo Item0="{1D5BA2FC-454E-4561-8C4B-5BAC5E4E2544}" />
 										<Selectors>
 											<Selector>
-												<Value Value="//div[text()=&apos;gayatri@medplatform.box&apos;]" />
+												<Value Value="xpath=//div[contains(text(),&apos;@medplatform.box&apos;)]" />
 											</Selector>
 											<Selector>
 												<Value Value="//div//div[contains(@class, &apos;pr-2&apos;)]" />
@@ -2458,6 +2530,7 @@
 				<Child Name="pinVerificationHeader" Owner="{446C5211-88F7-4C7D-A33B-12C67D313C48}" />
 				<Child Name="pinVerificationForm" Owner="{6B4AA90B-09F4-4815-BE82-2A3EFE92854F}">
 					<Child Name="pinBox" Owner="{3515261D-9AF8-49EC-ABA0-B1A83D29F06A}" />
+					<Child Name="passwordbox" Owner="{F9BC8F57-4BD1-4E23-865E-38BBC530910B}" />
 				</Child>
 				<Child Name="pinSubmitButton" Owner="{E6710D8D-13CE-4BB2-9435-B8BA584A250A}" />
 				<Child Name="contactCenterAgentHeader" Owner="{D0B2DB5C-A0EA-4AC6-8D90-D7BE8221CCBE}" />
@@ -2466,6 +2539,10 @@
 					<Child Name="SignOutMenu" Owner="{45FA1511-EA1D-4DF8-A7AC-00ED7ED99AF7}" />
 				</Child>
 				<Child Name="panelHeader" Owner="{C240E543-B029-49CF-8159-C3F616C3BC95}" />
+				<Child Name="panelIfYouForgotYourPin" Owner="{F8C37E9B-1487-4405-925E-3FD9E1012837}" />
+				<Child Name="pinVerificationSubmitButtonGrey" Owner="{CF092BEA-8E11-4D2E-8D9C-09D83B52667C}" />
+				<Child Name="submitbuttonSubmit2" Owner="{0309B7A0-B5B8-41D3-8D98-5AA9B9A6EEFB}" />
+				<Child Name="panelUserName" Owner="{08FFB89F-34AF-4B2D-8C4D-A4E4666E9DE0}" />
 			</Child>
 			<Child Name="meddispenseSignOutPage" Owner="{2467B272-35B0-49CB-AF14-4F30EF069C9A}">
 				<Child Name="signOutMessage" Owner="{F09DAAF4-ECF2-41C9-92E1-A01DADAB1EF3}" />
