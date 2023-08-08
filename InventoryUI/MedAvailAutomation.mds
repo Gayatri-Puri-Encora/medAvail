@@ -8,7 +8,23 @@
 	</children>
 	<config language="{90F89436-9452-4F95-9882-6B5210079F13}" />
 	<testItems key="{DC9A2459-39A8-402D-9AE9-D91F26324A60}" version="14">
-		<children />
+		<children>
+			<testItem name="selectRequiredCheckbox" key="{D4D02B80-166F-4590-9988-530AAAEAD01C}" group="False" parallel="False" enabled="True" testMoniker="{8F54ACC6-3F5D-4901-82A8-8A254C1D74AC}selectRequiredCheckbox" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+				<testParameters />
+				<environments activeCloud="SWT" />
+				<children />
+			</testItem>
+			<testItem name="clickOnSubmitButton" key="{928AB55F-B3B2-47B8-B5D3-7969726BC946}" group="False" parallel="False" enabled="True" testMoniker="{8F54ACC6-3F5D-4901-82A8-8A254C1D74AC}clickOnSubmitButton" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+				<testParameters />
+				<environments activeCloud="CBT" />
+				<children />
+			</testItem>
+			<testItem name="confirmRx" key="{EEE101CF-6F74-4807-8ED7-BD70DB889ECC}" group="False" parallel="False" enabled="True" testMoniker="{8F54ACC6-3F5D-4901-82A8-8A254C1D74AC}confirmRx" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+				<testParameters />
+				<environments activeCloud="CBT" />
+				<children />
+			</testItem>
+		</children>
 	</testItems>
 	<variables key="{28E68814-8FF5-4523-AF90-2F62CC265EBC}">
 		<data Version="4">
@@ -131,7 +147,7 @@
 		</data>
 	</variables>
 	<settings key="{4AF1E2CF-1DB6-49EF-908B-EB784495B237}">
-		<settingsVersion value="15.52" />
+		<settingsVersion value="15.50" />
 		<setting name="AgOpenApp_ExtendedSilverlightObjectTree" type="1" value="False" />
 		<setting name="ApplicationHangingProcessFilterMode" type="6" rowIndex="4" colIndex="0">
 			<columns>

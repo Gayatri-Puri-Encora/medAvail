@@ -1,25 +1,28 @@
-﻿
-let browser = Aliases.browser;
+﻿let browser = Aliases.browser;
 let spnrxTask = browser.SpnRxPage;
 
-function receiveSelectPatientAndRxTask()
-{
-                                                                                                                                              //Wait until receives spnrx task appears
-    Delay(10000)
+function selectRequiredCheckbox(){
+  spnrxTask.requiredCheckbox.ClickChecked(true);
+  aqObject.CheckProperty(spnrxTask.requiredCheckbox, "value", cmpEqual, "on");
+  aqObject.CheckProperty(spnrxTask.submitButton, "className", cmpContains, "glowShow");
+  Log.Message("Clicked on Required Checkbox");
 }
 
-function submitRx()
-{
-  //Select required checkbox
-  spnrxTask.requiredCheckbox.Click();
-  //click on submit button
-  spnrxTask.submitButton.Click();
+function clickOnSubmitButton(){
+  
+  spnrxTask.submitButton.ClickButton();
+  aqObject.CheckProperty(spnrxTask.confirmSelectedRxsAndOtcsPopUp, "Exists", cmpEqual, true);
+  Log.Message("Clicked on Submit Button");
 }
 
 function confirmRx()
 {
-  spnrxTask.confirmButton.Click();
+  spnrxTask.confirmButton.Click();  
+  aqObject.CheckProperty(Aliases.browser.commonControls.contactCenterAgentText, "contentText", cmpEqual, "Contact Center Agent");
+  Log.Message("Clicked on Confirm button");
 }
 
-module.exports.submitRx = submitRx;
+module.exports.selectRequiredCheckbox = selectRequiredCheckbox;
+module.exports.clickOnSubmitButton = clickOnSubmitButton;
 module.exports.confirmRx = confirmRx;
+

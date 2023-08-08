@@ -1542,6 +1542,24 @@
 											</Selector>
 										</Selectors>
 									</Child>
+									<Child Name="contactCenterAgentText" Key="{A5A11AAC-C601-4958-9600-03F48275DF02}">
+										<Image FileName="1928558902" Left="848" Top="210" Right="1368" Bottom="242" />
+										<TypeInfo Item0="{1D5BA2FC-454E-4561-8C4B-5BAC5E4E2544}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//h1[.=&apos;Contact Center Agent&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//h1[contains(@class, &apos;_1uLdCErFjVXANsZ3VR1Rvl&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;_2XxUM-Toftl80s-b5fXXlN&apos;]//h1" />
+											</Selector>
+											<Selector>
+												<Value Value="//h1" />
+											</Selector>
+										</Selectors>
+									</Child>
 								</Children>
 							</Child>
 							<Child Name="loginWindow" Key="{C42EB11A-0F0D-4521-B0BA-CF32F7ACC707}">
@@ -1594,6 +1612,15 @@
 										<Selectors>
 											<Selector>
 												<Value Value="//input[@value=&apos;Confirm&apos;]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="confirmSelectedRxsAndOtcsPopUp" Key="{493082F2-6668-4D3F-97CC-E6A2F81925BA}">
+										<Image FileName="1422914684" Left="368" Top="344" Right="1568" Bottom="790" />
+										<TypeInfo Item0="{1D5BA2FC-454E-4561-8C4B-5BAC5E4E2544}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;_1qw-rMJRxqNNBFUFoB-4rS&apos;)]" />
 											</Selector>
 										</Selectors>
 									</Child>
@@ -2614,12 +2641,14 @@
 				<Child Name="editImagesPrintButton" Owner="{359437A3-B3B9-43BF-9611-EF9E702A40EC}" />
 				<Child Name="editImagesZoomMinusButton" Owner="{0FBB5C7E-BE2A-4928-A3C9-4C82A4B5686D}" />
 				<Child Name="editImagesZoomPlusButton" Owner="{73F7C079-D9A3-4CA1-A1CA-CB24FC98F37E}" />
+				<Child Name="contactCenterAgentText" Owner="{A5A11AAC-C601-4958-9600-03F48275DF02}" />
 			</Child>
 			<Child Name="loginWindow" Owner="{C42EB11A-0F0D-4521-B0BA-CF32F7ACC707}" />
 			<Child Name="SpnRxPage" Owner="{235F109F-C889-4621-A8DC-D359685F6B25}">
 				<Child Name="requiredCheckbox" Owner="{5F757C81-1980-4318-8F9B-CA7EAB0A16B8}" />
 				<Child Name="submitButton" Owner="{A31BA62C-CFBC-47A0-B78B-5C9E0F5EBBCD}" />
 				<Child Name="confirmButton" Owner="{C915FE3F-D448-4B03-9909-67BCF053068F}" />
+				<Child Name="confirmSelectedRxsAndOtcsPopUp" Owner="{493082F2-6668-4D3F-97CC-E6A2F81925BA}" />
 			</Child>
 			<Child Name="qaConsultAuthorizePage" Owner="{96E1A110-3D90-4A0F-BC6C-736565EFDC88}">
 				<Child Name="transactionProgressSection" Owner="{F46AEA2F-169A-4022-AB5C-3BA023EEAD6C}" />
