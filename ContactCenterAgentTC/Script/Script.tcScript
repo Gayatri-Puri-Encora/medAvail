@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<child name="VerifyContactCenterAgentPage" key="{C8C37BF4-9758-44E8-96B6-5497CECA1DEC}" path="..\..\..\..\..\Downloads\VerifyContactCenterAgentPage.js" />
+		<child name="TC96658_Verify_UI_for_Contact_Center_Agent_Page_" key="{3D77E10C-4385-4193-8E04-E23BCF4F80B8}" path="..\..\..\..\..\Downloads\TC96658_Verify_UI_for_Contact_Center_Agent_Page_.js" />
+	</children>
+</Root>

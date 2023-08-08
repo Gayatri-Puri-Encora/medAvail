@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{24B6FA0B-0143-461A-9758-AEB9E9A9428B}" version="15.0" key="{9B90BBAF-5FBD-40C3-A822-7D88B49E5AA4}">
+	<children>
+		<child name="ContactCenterAgentTC" key="{087997F6-343C-4CA8-B59E-D284918CB6B2}" path="ContactCenterAgentTC\ContactCenterAgentTC.mds" />
+	</children>
+	<testItems key="{A9E91FEA-05A5-47B9-BEE7-3B95B0F1E4DE}">
+		<children>
+			<testItem key="{087997F6-343C-4CA8-B59E-D284918CB6B2}" enabled="True" timeout="0" stopOnError="True" description="" />
+		</children>
+	</testItems>
+	<variables key="{31F86FA1-C390-4D62-98AF-A9E8E5310543}" />
+	<analysis key="{415FBD26-706C-4D6A-9DC7-AD06ECD0C146}" />
+	<scc key="{00000000-0000-0000-0000-000000000000}" name="">
+		<data />
+	</scc>
+</Root>
