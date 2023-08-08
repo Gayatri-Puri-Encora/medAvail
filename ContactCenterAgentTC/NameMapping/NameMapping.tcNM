@@ -19,110 +19,6 @@
 							</Property>
 						</Properties>
 						<Children>
-							<Child Name="meddispenseSignInPage" Key="{AA3CF459-29CF-4C14-8575-2FBF9A091BC5}">
-								<Properties>
-									<Property Name="ObjectType">
-										<Value Value="Page" />
-									</Property>
-									<Property Name="URL">
-										<Value Value="https://qa1-adfs.medplatform.medavail.com/adfs/ls/*" />
-									</Property>
-								</Properties>
-								<Children>
-									<Child Name="medDispenseLoginForm" Key="{330B45A6-1AE7-4DB6-ABFC-FC85417B62F4}">
-										<Selectors>
-											<Selector>
-												<Value Value="#loginForm" />
-											</Selector>
-											<Selector>
-												<Value Value="//form[contains(., &apos;Sign in&apos;)]" />
-											</Selector>
-											<Selector>
-												<Value Value="//main//form[contains(@action, &apos;ls&apos;)]" />
-											</Selector>
-											<Selector>
-												<Value Value="//div[@id=&apos;loginArea&apos;]/form" />
-											</Selector>
-											<Selector>
-												<Value Value="//main//form" />
-											</Selector>
-										</Selectors>
-									</Child>
-									<Child Name="usernameTextField" Key="{98870357-7265-4321-8423-9EE86DBCB737}">
-										<Selectors>
-											<Selector>
-												<Value Value="//input[@id=(//label[.=&apos;User Account&apos;]/@for)]" />
-											</Selector>
-											<Selector>
-												<Value Value="#userNameInput" />
-											</Selector>
-											<Selector>
-												<Value Value="//main//form[@id=&apos;loginForm&apos;]//input[@name=&apos;UserName&apos;]" />
-											</Selector>
-											<Selector>
-												<Value Value="//form[@id=&apos;loginForm&apos;]/div[@id=&apos;formsAuthenticationArea&apos;]/div[@id=&apos;userNameArea&apos;]/input" />
-											</Selector>
-										</Selectors>
-									</Child>
-									<Child Name="passwordTextField" Key="{2629BCF9-C45A-4BC0-AC2E-F96292C1B38F}">
-										<Selectors>
-											<Selector>
-												<Value Value="//input[@id=(//label[.=&apos;Password&apos;]/@for)]" />
-											</Selector>
-											<Selector>
-												<Value Value="#passwordInput" />
-											</Selector>
-											<Selector>
-												<Value Value="//input[@name=&apos;Password&apos;]" />
-											</Selector>
-											<Selector>
-												<Value Value="//form[@id=&apos;loginForm&apos;]/div[@id=&apos;formsAuthenticationArea&apos;]/div[@id=&apos;passwordArea&apos;]/input" />
-											</Selector>
-										</Selectors>
-									</Child>
-									<Child Name="medDispenseLogo" Key="{27CC2EFF-13D3-4F41-A639-E009F5C06E65}">
-										<Selectors>
-											<Selector>
-												<Value Value="#companyLogo" />
-											</Selector>
-											<Selector>
-												<Value Value="//img[contains(@src, &apos;logo&apos;)]" />
-											</Selector>
-											<Selector>
-												<Value Value="//img[contains(@class, &apos;logoImage&apos;)]" />
-											</Selector>
-											<Selector>
-												<Value Value="//div[@id=&apos;header&apos;]/img" />
-											</Selector>
-											<Selector>
-												<Value Value="//img" />
-											</Selector>
-										</Selectors>
-									</Child>
-									<Child Name="SignInButton" Key="{A4232501-2506-4B25-A3A6-B3C5133CA957}">
-										<Selectors>
-											<Selector>
-												<Value Value="#submitButton" />
-											</Selector>
-											<Selector>
-												<Value Value="//span[.=&apos;Sign in&apos;]" />
-											</Selector>
-											<Selector>
-												<Value Value="//span[@role=&apos;button&apos;]" />
-											</Selector>
-											<Selector>
-												<Value Value="//span[contains(@class, &apos;submit&apos;)]" />
-											</Selector>
-											<Selector>
-												<Value Value="//div[@id=&apos;submissionArea&apos;]/span" />
-											</Selector>
-											<Selector>
-												<Value Value="//div[@id=&apos;content&apos;]/main//form/div[@id=&apos;formsAuthenticationArea&apos;]//span" />
-											</Selector>
-										</Selectors>
-									</Child>
-								</Children>
-							</Child>
 							<Child Name="contactCenterAgentPage" Key="{93922C15-7307-4FB5-A542-541E49F52880}">
 								<Properties>
 									<Property Name="ObjectType">
@@ -145,37 +41,6 @@
 												<Value Value="//h2" />
 											</Selector>
 										</Selectors>
-									</Child>
-									<Child Name="pinVerificationForm" Key="{6B4AA90B-09F4-4815-BE82-2A3EFE92854F}">
-										<Selectors>
-											<Selector>
-												<Value Value="//form[@name=&apos;formPinVerification&apos;]" />
-											</Selector>
-											<Selector>
-												<Value Value="//form[.=&apos;Enter your PIN&apos;]" />
-											</Selector>
-											<Selector>
-												<Value Value="//form[contains(@class, &apos;mt-4&apos;)]" />
-											</Selector>
-											<Selector>
-												<Value Value="//form" />
-											</Selector>
-										</Selectors>
-										<Children>
-											<Child Name="pinBox" Key="{3515261D-9AF8-49EC-ABA0-B1A83D29F06A}">
-												<Selectors>
-													<Selector>
-														<Value Value="//input[@type=&apos;password&apos;]" />
-													</Selector>
-													<Selector>
-														<Value Value="//input[contains(@class, &apos;form-control&apos;)]" />
-													</Selector>
-													<Selector>
-														<Value Value="//div[2]//form//input" />
-													</Selector>
-												</Selectors>
-											</Child>
-										</Children>
 									</Child>
 									<Child Name="pinSubmitButton" Key="{E6710D8D-13CE-4BB2-9435-B8BA584A250A}">
 										<Selectors>
@@ -517,10 +382,10 @@
 											</Selector>
 										</Selectors>
 									</Child>
-									<Child Name="panelVedantpardeshiMedplatformBo" Key="{2F9AD159-BB3B-4CBD-B723-EBD658A8CBD5}">
+									<Child Name="usernameText" Key="{2F9AD159-BB3B-4CBD-B723-EBD658A8CBD5}">
 										<Selectors>
 											<Selector>
-												<Value Value="//div[text()=&apos;vedantpardeshi@medplatform.box&apos;]" Enabled="False" />
+												<Value Value="xpath=//div[text()=&apos;%LoginUsername%&apos;]" />
 											</Selector>
 											<Selector>
 												<Value Value="//div//div[contains(@class, &apos;pr-2&apos;)]" />
@@ -558,35 +423,6 @@
 									</Child>
 								</Children>
 							</Child>
-							<Child Name="meddispenseSignOutPage" Key="{2467B272-35B0-49CB-AF14-4F30EF069C9A}">
-								<Properties>
-									<Property Name="ObjectType">
-										<Value Value="Page" />
-									</Property>
-									<Property Name="URL">
-										<Value Value="https://qa1.medplatform.medavail.com/MedDispense/api/Home/SignOut" />
-									</Property>
-								</Properties>
-								<Children>
-									<Child Name="signOutMessage" Key="{F09DAAF4-ECF2-41C9-92E1-A01DADAB1EF3}">
-										<Selectors>
-											<Selector>
-												<Value Value="//div/div/div" />
-											</Selector>
-										</Selectors>
-									</Child>
-								</Children>
-							</Child>
-							<Child Name="LoginWindow" Key="{C42EB11A-0F0D-4521-B0BA-CF32F7ACC707}">
-								<Properties>
-									<Property Name="ObjectType">
-										<Value Value="BrowserWindow" />
-									</Property>
-									<Property Name="WndCaption">
-										<Value Value="Sign In - Google Chrome" />
-									</Property>
-								</Properties>
-							</Child>
 						</Children>
 					</Child>
 				</Children>
@@ -595,19 +431,8 @@
 	</Nodes>
 	<LogicalNodes Name="Aliases" Owner="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
 		<Child Name="browser" Owner="{99C66040-7B1F-411A-9603-E692128AF019}">
-			<Child Name="meddispenseSignInPage" Owner="{AA3CF459-29CF-4C14-8575-2FBF9A091BC5}">
-				<Child Name="medDispenseLoginForm" Owner="{330B45A6-1AE7-4DB6-ABFC-FC85417B62F4}">
-					<Child Name="usernameTextField" Owner="{98870357-7265-4321-8423-9EE86DBCB737}" />
-					<Child Name="passwordTextField" Owner="{2629BCF9-C45A-4BC0-AC2E-F96292C1B38F}" />
-					<Child Name="SignInButton" Owner="{A4232501-2506-4B25-A3A6-B3C5133CA957}" />
-				</Child>
-				<Child Name="medDispenseLogo" Owner="{27CC2EFF-13D3-4F41-A639-E009F5C06E65}" />
-			</Child>
 			<Child Name="contactCenterAgentPage" Owner="{93922C15-7307-4FB5-A542-541E49F52880}">
 				<Child Name="pinVerificationHeader" Owner="{446C5211-88F7-4C7D-A33B-12C67D313C48}" />
-				<Child Name="pinVerificationForm" Owner="{6B4AA90B-09F4-4815-BE82-2A3EFE92854F}">
-					<Child Name="pinBox" Owner="{3515261D-9AF8-49EC-ABA0-B1A83D29F06A}" />
-				</Child>
 				<Child Name="pinSubmitButton" Owner="{E6710D8D-13CE-4BB2-9435-B8BA584A250A}" />
 				<Child Name="contactCenterAgentHeader" Owner="{D0B2DB5C-A0EA-4AC6-8D90-D7BE8221CCBE}" />
 				<Child Name="UsernameDropdown" Owner="{16DBE756-261B-4053-A611-66FFD97053D1}" />
@@ -640,14 +465,10 @@
 				<Child Name="buttonSubmit" Owner="{D22929F0-3958-4BF4-989D-0F6BFA8BA861}" />
 				<Child Name="queuedTaskIndicator" Owner="{511643B8-4C18-4D1F-BDCE-2C092C37FD5D}" />
 				<Child Name="sessionTimer" Owner="{9CCBF844-BD60-47AD-AA90-AAF7E6D30D04}" />
-				<Child Name="panelVedantpardeshiMedplatformBo" Owner="{2F9AD159-BB3B-4CBD-B723-EBD658A8CBD5}" />
+				<Child Name="usernameText" Owner="{2F9AD159-BB3B-4CBD-B723-EBD658A8CBD5}" />
 				<Child Name="linkLaunchhelp" Owner="{BC4E66BC-277B-4357-A76B-2AFC3F528F91}" />
 				<Child Name="medavailVersion" Owner="{389AB468-59A9-4686-8894-45261D9A93D5}" />
 			</Child>
-			<Child Name="meddispenseSignOutPage" Owner="{2467B272-35B0-49CB-AF14-4F30EF069C9A}">
-				<Child Name="signOutMessage" Owner="{F09DAAF4-ECF2-41C9-92E1-A01DADAB1EF3}" />
-			</Child>
-			<Child Name="LoginWindow" Owner="{C42EB11A-0F0D-4521-B0BA-CF32F7ACC707}" />
 		</Child>
 	</LogicalNodes>
 </Root>
